@@ -1,0 +1,105 @@
+algo produit scalaire 
+type
+tab: tableau of [3] of integer
+v1,v2:tab
+i,:integer
+
+for(i=0;i<3;i++)
+whrite ("donner l element de vecteur v1")
+read(v1[i])
+whrite("donner l element de vecteur v2")
+read(v2[i])
+procedure prodsc(v2:tab,v1:tab)
+{
+var ps : entier
+for (i=0;i<3;i++)
+ps=ps+v2[i]*v1[i]
+
+whrite("le produit scalaire est ps")
+if (ps=0)
+{
+whrite("les des vecteurs v 1 et v2 sont orthogonaux)
+}end
+algo des produits scalaire
+tab: tableau of [3] of integer
+v1,v2:*tab
+var n:integer
+
+read (n)
+
+for (i=0;i<n;i++)
+{
+for(i=0;i<3;i++)
+{
+whrite ("donner l element de vecteur v1")
+read(*v1[i])
+whrite("donner l element de vecteur v2")
+read(*v2[i])
+}
+prodsc(*v1,*v2)
+
+
+}
+-------------------------------------------------//////////----------------------------------------------------------------------------
+
+algo produit scalaire 
+type
+tab: tableau of [3] of integer
+v1,v2:tab
+i,:integer
+ps1:entier
+
+for(i=0;i<3;i++)
+whrite ("donner l element de vecteur v1")
+read(v1[i])
+whrite("donner l element de vecteur v2")
+read(v2[i])
+fonction prodsc(v2:tab,v1:tab):entier
+{
+var ps : entier
+for (i=0;i<3;i++)
+ps=ps+v2[i]*v1[i]
+
+
+}
+prodsc=ps;
+
+}
+
+algo des produits scalaire
+tab: tableau of [3] of integer
+v1,v2:*tab
+var n,ps:integer
+
+read (n)
+
+for (i=0;i<n;i++)
+{
+for(i=0;i<3;i++)
+{
+whrite ("donner l element de vecteur v1")
+read(*v1[i])
+whrite("donner l element de vecteur v2")
+read(*v2[i])
+}
+ps=prodsc(*v1,*v2)
+if (ps=0)
+whrite("le vecteur v1 et v2 sont orthogonaux")
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
